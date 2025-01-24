@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="FoodPedia Search Engine By Akashbk201">
+    <meta name="keywords" content="HTML, CSS, JavaScript, JSON">
+    <meta name="author" content="Akashbk201">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodPedia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-yellow-50">
+    <section class="bg-yellow-50 py-2 md:py-10">
+        <div class="container m-auto px-6 py-2 md:py-4">
+            <img class="w-52 m-auto" src="images/logo.png" alt="">
+            <h2 class="text-xl md:text-5xl text-lime-950 text-center font-bold py-6">Welcome to <u>FoodPedia</u></h2>
+            <div class="w-full md:w-2/3 m-auto flex gap-6 mt-0 md:mt-6 flex-col md:flex-row">
+                <input id="getinput" type="text" placeholder="Ex: Chicken"
+                    class="basis-full md:basis-3/4 w-full h-12 px-3 py-2 md:py-0 bg-white border border-gray-600 rounded-lg text-lime-950 text-sm md:text-base font-normal"
+                    value="Ex: Chicken">
+                <button id="dev-btn"
+                    class="basis-full md:basis-1/4 inline-block bg-orange-500 text-black text-base md:text-lg font-semibold text-center cursor-pointer rounded-lg py-2 md:py-0">Search</button>
+            </div>
+        </div>
+    </section>
+    <section class="bg-yellow-50 py-2 md:py-6">
+        <div class="container px-6 m-auto">
+            <div class="w-full md:w-2/4 m-auto" id="text-box">
+                <h2 class="text-center text-lg md:text-4xl font-bold text-gray-950 pb-6">Search for the best Meal Recipe
+                    along with
+                    Tutorial.</h2>
+                <p class="text-center text-gray-400 text-base md:text-xl font-semibold py-2">Most Serched Keywords:</p>
+                <p class="text-center text-gray-700 text-base font-normal"><span
+                        class="inline-block bg-orange-300 py-1 px-2 rounded-md mx-1 text-sm md:text-base">Chicken</span>
+                    <span
+                        class="inline-block bg-orange-300 py-1 px-2 rounded-md mx-1 my-1 text-sm md:text-base">Soup</span><span
+                        class="inline-block bg-orange-300 py-1 px-2 rounded-md mx-1 my-1 text-sm md:text-base">Fish</span><span
+                        class="inline-block bg-orange-300 py-1 px-2 rounded-md mx-1 my-1 text-sm md:text-base">Noodles</span><span
+                        class="inline-block bg-orange-300 py-1 px-2 rounded-md mx-1 my-1 text-sm md:text-base">Meat</span><span
+                        class="inline-block bg-orange-300 py-1 px-2 rounded-md mx-1 my-1 text-sm md:text-base">Rice</span>
+                </p>
+            </div>
+            <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12" id="box">
+
+            </div>
+        </div>
+    </section>
+
+    <section class="fixed top-0 left-0 w-full h-lvh bg-[#00800054] items-center invisible" id="popup">
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="custom.js"></script>
+</body>
+
+</html>
